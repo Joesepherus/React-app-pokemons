@@ -1,0 +1,11 @@
+.display-pokemons {
+
+}
+
+.display-pokemons__ul {
+    list-style-type: none;
+}
+
+.display-pokemons__text {
+    text-align: left;
+}

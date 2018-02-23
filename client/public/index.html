@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -10,6 +11,10 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -20,12 +25,29 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <noscript>
-      You need to enable JavaScript to run this app.
+        You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+
+    <nav class="navbar-inverse navbar-default header">
+        <div class="container-fluid header__container">
+            <div class="navbar-header header__center-div">
+                <a data-toggle="tab" href="#!/intro">
+                    <img class="header__icon" src="favicon.ico">
+                </a>
+            </div>
+            <div class="header__container">
+                <div class="header__center-div">
+                    <p class="header__text">React Web App</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-div" id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +58,38 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__text footer__center-div col-md-8">
+                © 2018, Created by Jozef Maloch
+            </div>
+            <div class="footer__container footer__social-media">
+                <div class="footer__center-div">
+                    <a href="https://github.com/Joesepherus">
+                        <i id="social-gh" class="fa fa-github-square fa-3x footer__social"></i>
+                    </a>
+                    <a href="https://www.facebook.com/JoesMaloch">
+                        <i id="social-fb" class="fa fa-facebook-square fa-3x footer__social"></i>
+                    </a>
+                    <a href="https://twitter.com/TQs_Joesepherus">
+                        <i id="social-tw" class="fa fa-twitter-square fa-3x footer__social"></i>
+                    </a>
+                    <a href="https://plus.google.com/u/1/+Joesepherus">
+                        <i id="social-gp" class="fa fa-google-plus-square fa-3x footer__social"></i>
+                    </a>
+                    <a href="mailto:jozefmaloch@gmail.com">
+                        <i id="social-em" class="fa fa-envelope-square fa-3x footer__social"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
 </html>
